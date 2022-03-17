@@ -14,3 +14,31 @@ This data science project series walks through step by step process of how to bu
 6.Python flask for http server
 
 7.HTML/CSS/Javascript for UI
+
+# Data Cleaning
+
+--Numerical imputation of missing values
+
+--Made columns for price per sqft.
+
+--Created dummy variable for location columns.
+
+--Remove outliers, negative values, Suspecious value from columns.
+
+--Transformed founded date into age of company
+
+# Model Building
+
+First, I transformed the categorical variables into dummy variables. I also split the data into train and tests sets with a test size of 20%.
+I tried three different models and evaluated them using Mean Absolute Error. I chose MAE because it is relatively easy to interpret and outliers aren’t particularly bad in for this type of model.
+
+I tried three different models:
+
+--Multiple Linear Regression – Baseline for the model.
+
+--Lasso Regression – Because of the sparse data from the many categorical variables, I thought a normalized regression like lasso would be effective.
+
+--Random Forest – Again, with the sparsity associated with the data, I thought that this would be a good fit.
+
+
+
